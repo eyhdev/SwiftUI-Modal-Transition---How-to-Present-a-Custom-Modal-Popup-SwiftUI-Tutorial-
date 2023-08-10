@@ -15,18 +15,19 @@ struct ContentView: View {
         ZStack{
             Image("BG")
                 .resizable()
+                .frame(width: 1000)
                 .ignoresSafeArea()
             
             Button(action: { showModel = true }){
                 Text("Click Me")
                     .font(.system(size: 40, weight: .heavy, design: .rounded))
-                    .foregroundColor(.white)
+                    .foregroundColor(Color.white)
                     .padding(.vertical, 20)
                     .padding(.horizontal, 40)
-                    .background(Color.black.opacity(0.3))
+                    .background(.ultraThinMaterial)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
             }
-            .offset(y: -100)
+            
             
             ModelView(isShowing: $showModel)
         }

@@ -46,14 +46,14 @@ struct ModelView: View {
             
             ZStack{
                 VStack{
-                    Text("\"is the most precious time.\"")
-                        .font(.system(size: 20, weight: .regular))
+                    Text("\"Hi👋🏻 welcome to my video\"")
+                        .font(.system(size: 22, weight: .regular))
                         .multilineTextAlignment(.center)
                         .fixedSize(horizontal: false, vertical: true)
                         .padding(.bottom, 10)
                     
-                    Text("AYHAN")
-                        .font(.system(size: 20, weight: .bold))
+                    Text("eyh.dev")
+                        .font(.system(size: 20, weight: .light))
                 }
                 .padding(.horizontal, 30)
                 }
